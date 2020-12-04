@@ -12,7 +12,6 @@ function setup() {
 	createCanvas(1600, 700);
 	rectMode(CENTER);
 
-
 	engine = Engine.create();
 	world = engine.world;
 	dustbinObj=new dustbin(1200,650);
@@ -20,7 +19,6 @@ function setup() {
 	groundObject=new ground(width/2,670,width,20);
 	//Create a Ground
 	
-
 	var render = Render.create({
 	  element: document.body,
 	  engine: engine,
@@ -36,7 +34,6 @@ function setup() {
   
 }
 
-
 function draw() {
   rectMode(CENTER);
   background(0);
@@ -44,11 +41,7 @@ function draw() {
   dustbinObj.display();
   paperObject.display();
   groundObject.display();
-  
- 
-  
-  
- 
+
 }
 
 function keyPressed() {
@@ -58,8 +51,3 @@ function keyPressed() {
     
   	}
 }
-
-
-
-
-
